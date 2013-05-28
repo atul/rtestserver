@@ -1,3 +1,5 @@
+http://rails-erd.rubyforge.org/install.html
+
 rails new rtestserver
 rake db:create
 rails generate controller home index
