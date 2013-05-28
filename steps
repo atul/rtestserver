@@ -1,0 +1,19 @@
+rails new rtestserver
+rake db:create
+rails generate controller home index
+rails generate scaffold Testbed name:string title:string description:text
+rails generate scaffold Test_case name:string title:string description:text procedure:text
+rails generate scaffold Testbed_owner name:string coreid:string description:text
+vi app/models/testbed.rb
+vi app/models/testbed_owner.rb
+vi app/models/test_case.rb
+vi app/models/testbed_owner.rb
+vi app/models/test_case.rb
+vi app/models/testbed_owner.rb
+vi app/models/testbed.rb
+rake db:migrate
+vi app/models/testbed.rb
+vi app/models/testbed_owner.rb
+vi app/views/home/index.html.erb
+
+
