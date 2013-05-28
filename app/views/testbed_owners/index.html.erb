@@ -1,0 +1,27 @@
+<h1>Listing testbed_owners</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Coreid</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @testbed_owners.each do |testbed_owner| %>
+  <tr>
+    <td><%= testbed_owner.name %></td>
+    <td><%= testbed_owner.coreid %></td>
+    <td><%= testbed_owner.description %></td>
+    <td><%= link_to 'Show', testbed_owner %></td>
+    <td><%= link_to 'Edit', edit_testbed_owner_path(testbed_owner) %></td>
+    <td><%= link_to 'Destroy', testbed_owner, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Testbed owner', new_testbed_owner_path %>

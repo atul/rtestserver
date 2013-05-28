@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @testbed.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @testbed.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @testbed.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_testbed_path(@testbed) %> |
+<%= link_to 'Back', testbeds_path %>

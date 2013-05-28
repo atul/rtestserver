@@ -1,0 +1,27 @@
+<h1>Listing testbeds</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @testbeds.each do |testbed| %>
+  <tr>
+    <td><%= testbed.name %></td>
+    <td><%= testbed.title %></td>
+    <td><%= testbed.description %></td>
+    <td><%= link_to 'Show', testbed %></td>
+    <td><%= link_to 'Edit', edit_testbed_path(testbed) %></td>
+    <td><%= link_to 'Destroy', testbed, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Testbed', new_testbed_path %>

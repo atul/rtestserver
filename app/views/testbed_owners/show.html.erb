@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @testbed_owner.name %>
+</p>
+
+<p>
+  <b>Coreid:</b>
+  <%= @testbed_owner.coreid %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @testbed_owner.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_testbed_owner_path(@testbed_owner) %> |
+<%= link_to 'Back', testbed_owners_path %>
